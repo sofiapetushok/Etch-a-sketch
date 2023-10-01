@@ -1,0 +1,36 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#container {
+    display: grid;
+    gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.grid-item:hover {
+    background-color: #edf8ae;
+    color: darkslateblue;
+}
+button {
+    background-color: #edf8ae;
+    padding: 10px 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+/* button:hover {
+    background-color: #d6d443;
+} */
