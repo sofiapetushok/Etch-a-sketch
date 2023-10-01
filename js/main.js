@@ -1,9 +1,18 @@
 const container = document.querySelector('#container');
 console.log(container);
  
-let rows = document.querySelector('.gridRow');
-let cols = document.querySelector('.gridCol');
-let clearBtn = document.querySelector('#clear-cells');
+const rows = document.querySelector('.gridRow');
+const cols = document.querySelector('.gridCol');
+const clearBtn = document.querySelector('#clear-cells');
+
+
+const setBg = (el) => {
+    const randColor = Math.floor(Math.random()*16777215).toString(16);   
+    el.style.backgroundColor = "#" + randColor;
+}
+const darkenBg = (el) => {
+    const color = 
+}
 
 function makeRows(rows, cols) {
     container.style.setProperty('--grid-rows', rows);
@@ -15,7 +24,8 @@ function makeRows(rows, cols) {
         // cell.textContent = '';
         cell.classList.add('grid-item');
         cell.addEventListener('mouseenter', () => {
-            cell.style.backgroundColor = "red";
+            // setBg(cell);
+            
         })
         container.appendChild(cell);
         clearBtn.addEventListener('click', () => {

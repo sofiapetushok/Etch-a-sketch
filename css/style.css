@@ -2,8 +2,36 @@
     --grid-cols: 1;
     --grid-rows: 1;
 }
-
+body {
+    background-color: #0c191f;
+}
+h1, h2, h3 {
+    color: lightblue;
+    margin-top: 20px;
+    text-align: center;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.controls {
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdfdf;
+    box-shadow: inset 0px 0px 20px 0px #0c2a48;
+    border-radius: 10px;
+    padding: 20px;
+}
+input.color-choice {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
 #container {
+    width: 600px;
+    box-shadow: inset 0px 0px 20px 0px #0c2a48;
     display: grid;
     gap: 0;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
