@@ -1,9 +1,13 @@
 :root {
-    --grid-cols: 1;
-    --grid-rows: 1;
+    --grid-cols: 20; /* Default number of columns */
+    --grid-rows: 20; /* Default number of rows */
+}
+i {
+    font-size: 20px;
 }
 body {
     background-color: #0c191f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1, h2, h3 {
     color: lightblue;
@@ -16,6 +20,9 @@ h1, h2, h3 {
     gap: 40px;
 }
 .controls {
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
     border: 1px solid #eee;
     display: flex;
     flex-direction: column;
@@ -24,14 +31,18 @@ h1, h2, h3 {
     border-radius: 10px;
     padding: 20px;
 }
-input.color-choice {
-    width: 50px;
-    height: 50px;
-    padding: 0;
+#colorPicker {
+    -webkit-appearance: none;
+    width: 100px; /* Set the width */
+    height: 100px; /* Set the height */
+    border: none; /* Add a border */
+    border-radius: 100%; /* Round the corners */
+    padding: 0px; /* Add padding */
 }
-#container {
-    width: 600px;
-    box-shadow: inset 0px 0px 20px 0px #0c2a48;
+ 
+#container { 
+    width: 60%;
+    aspect-ratio: 1/1;
     display: grid;
     gap: 0;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
@@ -51,14 +62,18 @@ input.color-choice {
     color: darkslateblue;
 }
 button {
-    background-color: #edf8ae;
-    padding: 10px 15px;
-    border: 1px solid #eee;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #9d9fb3;
     border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 20px;
-    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 13px -8px #202aa5;
+    transition: 0.1s ease-in-out;
 }
-/* button:hover {
-    background-color: #d6d443;
-} */
+button:hover {
+    translate: 1px 1px;
+    box-shadow: 0 0 13px -4px #202aa5;
+}
+label {
+    display: block;
+}

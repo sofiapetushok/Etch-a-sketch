@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/39d5609c78.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <h1>Let's Draw something!</h1>
     <main id="main">
         <div class="controls">
-            <input class="color-choice" type="color">
-            <button id="btn-alert">Send</button>
-            <button id="clear-cells">Clear</button>
+            <input id="colorPicker" type="color">
+            <div class="buttons">
+                <button id="colorBtn"><i class="fa-solid fa-paintbrush"></i></button>
+                <button id="randomBtn"><i class="fa-solid fa-dice"></i></button>
+                <button id="eraseBtn"><i class="fa-solid fa-eraser"></i></button>
+            </div>
+            <div class="range">
+                <label for="gridRange" id="gridResult"></label>
+                <input id="gridRange" type="range" min="1" max="99">
+                <button id="applyBtn"><i class="fa-regular fa-paper-plane"></i> 
+            </div>
+            <button id="clear-cells"><i class="fa-solid fa-delete-left"></i></button>
         </div>
         <div id="container" class="container">
             
