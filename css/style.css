@@ -6,13 +6,16 @@ i {
     font-size: 20px;
 }
 body {
-    background-color: #0c191f;
+    background-color: #e7e7e7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1, h2, h3 {
-    color: lightblue;
     margin-top: 20px;
     text-align: center;
+}
+h1 {
+    font-size: 60px;
+    color: #4e4e4e;
 }
 #main {
     display: flex;
@@ -27,7 +30,7 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     background-color: #dfdfdf;
-    box-shadow: inset 0px 0px 20px 0px #0c2a48;
+    box-shadow: inset 0px 0px 20px 0px #acacac;
     border-radius: 10px;
     padding: 20px;
 }
@@ -42,6 +45,7 @@ h1, h2, h3 {
  
 #container { 
     width: 60%;
+    box-shadow: 0 0 20px -5px #707070;
     aspect-ratio: 1/1;
     display: grid;
     gap: 0;
@@ -53,7 +57,6 @@ h1, h2, h3 {
     aspect-ratio: 1/1;
     background-color: rgb(255, 255, 255);
     color: #fff;
-    border: 1px solid #ddd;
     text-align: center;
     transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -62,17 +65,16 @@ h1, h2, h3 {
     color: darkslateblue;
 }
 button {
-    background-color: #ffffff;
-    padding: 10px;
-    border: 1px solid #9d9fb3;
-    border-radius: 8px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #f3f3f3, #dddddd);
+    box-shadow: 4px 4px 19px 10px #bebebe, -16px -20px 20px #ffffff;
     cursor: pointer;
-    box-shadow: 0 0 13px -8px #202aa5;
+    border: none;
+    padding: 16px;
     transition: 0.1s ease-in-out;
 }
 button:hover {
-    translate: 1px 1px;
-    box-shadow: 0 0 13px -4px #202aa5;
+    translate: 1px;
 }
 label {
     display: block;
